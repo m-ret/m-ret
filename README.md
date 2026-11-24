@@ -1,30 +1,14 @@
-# I build modern websites and apps that convert visitors into customers.
+# Marcelo Retana
 
-Software Engineer & serial entrepreneur with 10+ years of experience. Performance-first, SEO-optimized, and engineered for conversions.
+Senior software engineer in Costa Rica (UTC-6) and founder of [GEXP Software](https://gexpsoftware.com). TypeScript, React, Node.js and Postgres; 12 years on the web.
 
-Based in Costa Rica, delivering worldwide.
+## What I'm building
 
-[marceloretana.com](https://www.marceloretana.com) ・ [info@gexpsoftware.com](mailto:info@gexpsoftware.com) ・ [Book a Call](https://cal.com/marcelo-retana)
+- **[GoEasy.Chat](https://goeasy.chat)**: a multi-tenant WhatsApp support SaaS with Paddle billing and automatic workspace setup.
+- **[Alhena](https://alhena.fun)**: a family task board. gpt-4o-mini drafts tasks from email through a Zod schema, each draft is traced to the run that made it, and a parent approves before anything becomes a task.
 
----
+## How I work
 
-### Ventures
+On GEXP products, agents write much of the code. Tests, typed boundaries and a review by models other than the author decide what ships.
 
-| | |
-|---|---|
-| **[GEXP Software](https://gexpsoftware.com)** | Digital products for startups & enterprises |
-| **[GoEasy Chat](https://goeasy.chat)** | Team-based WhatsApp customer support SaaS |
-| **[TicoGuides](https://ticoguides.com)** | Authentic Costa Rican adventures |
-| **[Inflafest](https://inflafest.com)** | Premier inflatable parks & festival experiences |
-| **[GEXP Costa Rica](https://gexpsoftware.com/cr)** | Empowering local businesses with technology |
-
-### Stack
-
-**Frontend** — React, Next.js, React Native, TypeScript, SSR/RSC
-**Backend** — Node.js, GraphQL, REST APIs, PostgreSQL, Redis
-**Cloud** — AWS, Hetzner, Coolify, Docker, CI/CD
-**AI** — Claude Code, Cursor, AI Workflows
-
-### Trusted By
-
-Bank of America ・ IBM ・ Universal Music ・ BMW ・ Mercedes Benz ・ Pfizer ・ Univision-Televisa ・ Provectus ・ Automation Anywhere
+[LinkedIn](https://www.linkedin.com/in/marceloretana) · [marceloretana.com](https://marceloretana.com)
