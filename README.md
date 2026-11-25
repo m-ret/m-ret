@@ -1,63 +1,30 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/title-dark.svg">
-  <img src="assets/title-light.svg" width="100%" alt="Senior Full-Stack &amp; AI Product Engineer">
-</picture>
+### Senior full-stack engineer at Universal Music Group since 2019, remote from Costa Rica
 
-I take work from discovery and spec to release, in TypeScript end to end. In my own products I build LLM features with validated output, traces and a person's approval.
+I also run [GEXP Software](https://gexpsoftware.com), a small studio where I take products from spec to production. 12 years on the web. I write the behavior spec before the code and keep pull requests small.
 
-I run [GEXP Software](https://gexpsoftware.com), a small remote studio in Costa Rica (UTC-6). 12 years on the web, remote since 2019. I work in English and Spanish.
+###### Selected work
 
-## What I've shipped
+**[Picomar](https://picomar.com)** · [Case study](https://marceloretana.com/work/picomar)<br>
+Booking platform for a 46-villa rental company. Payment callbacks arrive late, twice or not at all, so the handler is idempotent and a reconcile job catches the rest. Availability syncs both ways with the channel manager.<br>
+<sub>Client, live · Next.js 16, Postgres on Supabase with row-level security</sub>
 
-<a href="https://picomar.com"><img src="assets/picomar.webp" width="100%" alt="Picomar home page: an aerial photo of a villa in the forest, the headline A luxury villa, looked after, and a booking search bar"></a>
+**[Alhena](https://alhena.fun)** · [Case study](https://marceloretana.com/work/alhena)<br>
+Drafts a family's tasks from school email. Code validates every model reply, normalizes dates from the email's timestamp and drops links that weren't in it. A parent approves, and each extraction keeps its model and trace ID.<br>
+<sub>Own product, live · Next.js 16, OpenAI structured outputs, Zod, Drizzle, Neon</sub>
 
-**[Picomar](https://picomar.com)** is the booking platform of a 46-villa rental company, a client of my studio. Next.js 16, Postgres on Supabase with row-level security, two-way channel-manager sync and card payments. Every change has to pass lint, type checks and a suite of more than 800 test files. [Case study](https://marceloretana.com/work/picomar)
+**[GoEasy.Chat](https://goeasy.chat/en)** · [Case study](https://marceloretana.com/work/goeasy-chat)<br>
+WhatsApp support for teams, built on Chatwoot. After checkout the server verifies the payment and creates the workspace and trial. A health sweep checks each tenant, repairs what it can and alerts on the rest.<br>
+<sub>Own product, live · Next.js 16, Chatwoot, Paddle</sub>
 
-<p><a href="https://alhena.fun"><img src="assets/alhena.webp" width="50%" alt="Alhena: a card with four tasks waiting for a parent to approve"></a><a href="https://goeasy.chat/en"><img src="assets/goeasy-chat.webp" width="50%" alt="GoEasyChat: the headline Your team loses customers when only one person can answer WhatsApp, above a shared inbox"></a></p>
+**Review harness**<br>
+On GEXP products agents write much of the code, so each diff goes to two to four models that didn't write it. Every reviewer that fails is recorded with the reason, and a person makes the final call.<br>
+<sub>Studio tool, private</sub>
 
-**[Alhena](https://alhena.fun)** is a family task board, my own product. gpt-4o-mini drafts tasks from school email and a parent approves each one. Next.js 16, Drizzle and Neon Postgres. [Case study](https://marceloretana.com/work/alhena)
+###### Experience
 
-**[GoEasy.Chat](https://goeasy.chat/en)** is WhatsApp support for teams, my own product. After the Paddle checkout the server creates each customer's workspace and trial, with health checks and self-repair. [Case study](https://marceloretana.com/work/goeasy-chat)
+**Universal Music Group**: React and TypeScript front ends, Node.js services on AWS<br>
+**TelevisaUnivision**: the monorepo behind 10 high-traffic sites, including Univision.com and TUDN<br>
+**Also**: Provectus, IBM, SixFifty, and Prodigious on the Bank of America account<br>
+**Open source**: [chatwoot#13837](https://github.com/chatwoot/chatwoot/issues/13837), how WhatsApp's new user IDs would break contact matching
 
-## How I build with AI
-
-**From a school email to a task, in Alhena.** Code checks the model's reply before a parent sees a draft. Every extraction keeps its model name and trace ID, and a failed email is logged and skipped.
-
-<picture>
-  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/email-to-task-dark-mobile.svg">
-  <source media="(max-width: 640px)" srcset="assets/email-to-task-light-mobile.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/email-to-task-dark.svg">
-  <img src="assets/email-to-task-light.svg" width="100%" alt="Example. A school email says: for Friday, bring white poster board; 4th grade, bring the flute. Code checks the model's reply: it matches the schema, Friday becomes November 27, the flute is for another grade and is filtered out, and a link that isn't in the email is dropped. The parent gets a draft to approve or discard.">
-</picture>
-
-**Code review by other models, at GEXP.** On GEXP products agents write much of the code, and the model that wrote a change never reviews it. A harness I built sends each diff or plan to two to four others, and one that fails or gets cut off is recorded with the reason.
-
-<picture>
-  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/review-dark-mobile.svg">
-  <source media="(max-width: 640px)" srcset="assets/review-light-mobile.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/review-dark.svg">
-  <img src="assets/review-light.svg" width="100%" alt="Example. The type and risk of a change pick two to four reviewers, never the model that wrote it. Reviewer A answered with two findings, B with none, C was cut off and D hit its provider's limit; both are recorded. A person reads the answers and decides GO or NO-GO. A missing answer never counts as a yes.">
-</picture>
-
-I'm also building a terminal agent without a framework: a tool loop, an MCP server, replayable traces, and evals with held-out cases, injection and safety traps, and confidence intervals.
-
-## Where I've worked
-
-- **Universal Music Group**, since 2019: full-stack work on a long-running platform, with React and TypeScript front ends and Node.js services on AWS.
-- **TelevisaUnivision**: the monorepo behind 10 high-traffic sites, including Univision.com and TUDN, with Next.js, Relay, GraphQL and React Native.
-- **Provectus**: engineer at an AI consultancy and AWS Premier Tier partner, on work for its enterprise clients.
-- **IBM**: process tools with React, Node.js and the Carbon Design System.
-- **Earlier**: SixFifty, a US legal tech company, and Prodigious, on the Bank of America account.
-
-## Open source and writing
-
-- [chatwoot/chatwoot#13837](https://github.com/chatwoot/chatwoot/issues/13837): how Meta's WhatsApp business-scoped user IDs would break contact matching. Chatwoot's maintainers used it to track the work and closed it as completed in September 2026.
-- A bilingual [blog](https://marceloretana.com/blog) and [step-by-step guides](https://marceloretana.com/learn).
-
-## Tools
-
-- **AI:** OpenAI API with structured outputs, Zod, tool calling, MCP, evals
-- **Product:** Next.js, React Native, Node.js, GraphQL (Apollo, Relay), Postgres on Supabase, Drizzle, Prisma, Redis
-- **Cloud and quality:** AWS (Lambda, S3, CloudFront, DynamoDB, SQS), Vercel, Docker, Turborepo, GitHub Actions, Vitest, Playwright
-
-[Case studies](https://marceloretana.com/work) · [LinkedIn](https://www.linkedin.com/in/marceloretana) · [GEXP Software](https://gexpsoftware.com)
+[More case studies](https://marceloretana.com/work) · [Blog](https://marceloretana.com/blog) · [LinkedIn](https://www.linkedin.com/in/marceloretana)
