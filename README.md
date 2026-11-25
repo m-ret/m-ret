@@ -16,9 +16,9 @@ Drafts a family's tasks from school email. Code validates every model reply, nor
 WhatsApp support for teams, built on Chatwoot. After checkout the server verifies the payment and creates the workspace and trial. A health sweep checks each tenant, repairs what it can and alerts on the rest.<br>
 <sub>Own product, live · Next.js 16, Chatwoot, Paddle</sub>
 
-**Review harness**<br>
+**Review harness** · [Public rewrite](https://github.com/m-ret/review-panel)<br>
 On GEXP products agents write much of the code, so each diff goes to two to four models that didn't write it. Every reviewer that fails is recorded with the reason, and a person makes the final call.<br>
-<sub>Studio tool, private</sub>
+<sub>Studio tool, private · rewrite in Bun and TypeScript</sub>
 
 ###### Experience
 
